@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+:root {
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+--Dark-grayish-cyan: hsl(186, 14%, 43%);
+--Grayish-cyan: hsl(184, 14%, 56%);
+--Light-grayish-cyan: hsl(185, 41%, 84%);
+--Very-light-grayish-cyan: hsl(189, 41%, 97%);
+--White: hsl(0, 0%, 100%);
+--Strong-cyan: hsl(172, 67%, 45%);
+--font-family: 'Space Mono', monospace;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+   background-color: var(--Light-grayish-cyan);
+   font-family: var(--font-family);
+   font-weight: 700;
+}
+.logo {
+    display: block;
+    margin : 70px auto;
+}
+.container {
+    background-color: var(--White);
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid white;
+    width: 900px;
+    height: 450px;
+}
+.calculator {
+    display: flex;
+}
+label {
+    display:block;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--Dark-grayish-cyan);
+}
+.result-container {
+    background-color:  var(--Very-dark-cyan);
+    border-radius : 15px;
+    
+}
+.bill, .result-container{
+ flex: 1;
+ margin: 40px;
+}
+.billInput {
+    outline: none;
+    background-color: var(--Very-light-grayish-cyan);
+    border: none;
+    color: var(--Very-dark-cyan);
+    text-align: right;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+.billInput:focus {
+    outline: 3px solid var(--Strong-cyan);
+}
+input.billInput::placeholder {
+    color: var(--Grayish-cyan);
+
+}
+input[type='number'] ::-webkit-inner-spin-button {
+    appearance: none;
+}
+h3 {
+    font-size: 1.1rem;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    color: var(--Dark-grayish-cyan);
+}
+.btn {
+    background-color: var(--Very-dark-cyan);
+    color: var(--White);
+    font-weight: 700;
+    font-size: 1.3rem;
+    width: 90px;
+    height: 40px; 
+    padding: 0.3rem 0.5rem;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    cursor:pointer;
+    border:none;
+}
+.btn:hover {
+    background-color: var(--Light-grayish-cyan);
+    color: var(--Very-dark-cyan);
+
+}
+.btn:active {
+    background-color: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+}
+button:focus {
+    outline: 4px solid var(--Light-grayish-cyan);
+}
+.custom {
+    font-size: 1.4em;
+    font-weight: 700;
+    width: 90px;
+    font-family: var(--font-family);
+    outline: none;
+    border: none;
+    background-color: var(--Very-light-grayish-cyan);
+    color: var(--Very-dark-cyan);
+    width: 90px;
+    height: 40px; 
+    cursor: pointer;
+}
+.custom:active {
+    outline: 3px solid var(--Grayish-cyan);
+}
+.options {
+   width: 300px;
+ margin-bottom: 40px;
+
+}
+p {
+    color: var(--Light-grayish-cyan);
+}
+.result-item{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+small {
+    color: var(--Grayish-cyan);
+}
+.result-item span {
+    display: block;
+    font-size: 2.2rem;
+    color: var(--Strong-cyan);
+    font-weight: 700;
+    font-family: var(--font-family);
+}
+.reset {
+    text-transform: uppercase;
+    margin-top: 110px;
+    width: 90%;
+    margin-left: 15px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: var(--Strong-cyan);
+    border: none;
+    font-size: 1.1rem;
+    font-family: var(--font-family);
+    font-weight: 700;
+color: var(--Very-dark-cyan);
+transition: 0.5s background-color, o.5s color;
+cursor: pointer;
+}   

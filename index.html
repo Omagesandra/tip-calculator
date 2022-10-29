@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spliter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.svg" alt="" class="logo" />
+    </header>
+    
+
+    <main class="container">
+      <form action="#">
+        <div class="calculator">
+          <div class="bill">
+            <label for="bill">Bill</label>
+            <input
+              type="number"
+              name="bill"
+              id="bill"
+              class="billInput"
+              placeholder="0"
+              required
+            />
+
+            <div class="options">
+              <h3 class="heading">Select Tip %</h3>
+              <button class="btn" data-percent="5">5%</button>
+              <button class="btn" data-percent="10">10%</button>
+              <button class="btn" data-percent="15">15%</button>
+              <button class="btn" data-percent="25">25%</button>
+              <button class="btn" data-percent="50">50%</button>
+              <input
+                type="number"
+                name="number"
+                placeholder="Custom"
+                class="custom"
+              />
+            </div>
+            <label for="people">Number of People</label>
+            <input
+              type="number"
+              name="number"
+              id="people"
+              class="billInput"
+              placeholder="0"
+            />
+          </div>
+          <div class="result-container">
+            <div class="result-item">
+              <div>
+                <p>Tip Amount</p>
+                <small>/ person</small>
+              </div>
+              <span id="tip">$0.00</span>
+            </div>
+            <div class="result-item">
+              <div>
+                <p>Total</p>
+                <small>/ person</small>
+              </div>
+              <span id="total">$0.00</span>
+            </div>
+            <button type="reset" class="reset">Reset</button>
+          </div>
+        </div>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
